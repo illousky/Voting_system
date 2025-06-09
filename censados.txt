@@ -1,0 +1,37 @@
+ numeroDNI |            nombre            | fechaNacimiento | anioCenso | codigoAutorizacion 
+-----------+------------------------------+-----------------+-----------+--------------------
+ 39739740E | Jose Moreno Locke            | 09/04/66        | 2025      | 729
+ 83583583L | Restituta Sparrow Martinez   | 31/08/73        | 2025      | 535
+ 67867868T | Randall Martinez Mojamuto    | 04/06/96        | 2025      | 056
+ 12812814Q | Gabriel Ribas Pomares        | 30/05/54        | 2025      | 605
+ 92992992L | Benjamin Reyes Lopez         | 06/05/90        | 2025      | 095
+ 50850851I | Emiliano Reyes Gracia        | 16/11/81        | 2025      | 428
+ 47047047F | Luis Mas Moreno              | 27/08/54        | 2025      | 620
+ 29829830H | Emiliano Locke Gracia        | 08/05/60        | 2025      | 796
+ 26926927J | Camilo Marques Gibson        | 28/05/94        | 2025      | 716
+ 97797797K | Eva Ribera Pelaez            | 24/04/51        | 2025      | 697
+ 18618619K | Armando Linus Ribera         | 28/04/89        | 2025      | 424
+ 30630631P | Luisa Linus Coll             | 13/02/00        | 2025      | 090
+ 59659659J | Alberto Martinez Poza        | 28/09/93        | 2025      | 466
+ 27627628Z | Jack Garau Morales           | 17/05/89        | 2025      | 947
+ 87387387L | Kate Moss Sparrow            | 28/12/92        | 2025      | 853
+ 94994994D | Sofia Poza Gracia            | 06/07/76        | 2025      | 104
+ 49349349T | Jack Punset Gonzalez         | 11/01/59        | 2025      | 794
+ 32932933O | Petra Marques Pelaez         | 09/06/73        | 2025      | 599
+ 77477477X | Gonzalo Locke Ribas          | 20/12/78        | 2025      | 594
+ 84084083M | Jose Punset Pomares          | 19/01/66        | 2025      | 194
+ 59059059U | Benjamin Reyes Coll          | 17/06/61        | 2025      | 231
+ 72472472B | Jack San Moss                | 15/02/61        | 2025      | 839
+ 03603605D | Eva Mas Moreno               | 17/04/57        | 2025      | 242
+ 10410411O | Kate San Gibson              | 31/05/82        | 2025      | 142
+ 72872872Q | Alberto Mas Avila            | 16/07/95        | 2025      | 462
+ 87787787O | Kate San Moss                | 22/07/52        | 2025      | 587
+ 48448448J | Pedro Moreno Ribera          | 26/10/69        | 2025      | 572
+ 67667667L | Enjuto San Dominguez         | 11/04/50        | 2025      | 793
+ 80180180Q | Jose Poza Pomares            | 21/11/04        | 2025      | 906
+ 98598598R | Petra Gracia Sparrow         | 04/06/51        | 2025      | 331
+ 38138138W | Camilo Gracia Garau          | 08/05/59        | 2025      | 745
+ 60060060C | Restituta Martinez Narvaez   | 20/08/96        | 2025      | 871
+
+
+

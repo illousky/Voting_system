@@ -1,0 +1,2 @@
+El balanceador no comprueba que hay init error hasta que hace una peticion al servidor que esta desactivado, y además cada ciertas peticiones prueba a mandar una a dicho servidor,
+por ello suben las peticiones enviadas al servidor que no esta en funcionamiento. Por ello vemos claramente que los votos únicamente se producen en las instancias de vm1 y vm2.

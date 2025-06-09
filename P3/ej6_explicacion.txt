@@ -1,0 +1,1 @@
+Tras unos pocos intentos de voto, el balanceador detecta que la vm3 está activa de nuevo y vuelve a enviar peticiones al servidor

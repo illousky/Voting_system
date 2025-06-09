@@ -1,0 +1,10 @@
+mv1 = 0.19802214 segundos
+
+neon = 37.8379153 segundos
+
+django = 0.50354743 segundos
+
+Cuestion 1: 
+    En base a los tiempos registrados, en entornos con baja variabilidad, como la base de datos en la máquina virtual (VM1) y Django ORM, 
+    7 repeticiones son suficientes para obtener una estimación confiable. Sin embargo, en entornos con alta latencia e inestabilidad, 
+    como en Neon.tech, la variabilidad es mayor, lo que sugiere que se requieren más repeticiones para obtener una estimación representativa.

@@ -1,0 +1,4 @@
+- El balanceador distribuye equitativamente las peticiones
+- No hay descompensaciones entre las peticiones recibidas por cada instancia
+- Parece que en cada proceso de votacion, el balanceador sigue un algoritmo de afinidad basado en ROUTEID, pero entre ellos, para repartir los procesos, usa
+	el algoritmo de ROUND-ROBIN

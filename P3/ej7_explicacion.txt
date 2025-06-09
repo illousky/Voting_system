@@ -1,0 +1,1 @@
+La petición falla, ya que al tener activado el stickySession el load balancer intenta enviar la petición al servidor que tiene guardada, que al estar desactivada la petición falla
