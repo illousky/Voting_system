@@ -12,7 +12,7 @@
 # use sqlite 3
 ##DATABASE_SERVER_URL=sqlite:///db.sqlite3
 # use postgres
-DATABASE_SERVER_URL='postgres://alumnodb:alumnodb@10.27.20.253:15432/voto' 
+DATABASE_SERVER_URL='postgres://alumnodb:alumnodb@192.168.86.28:15432/voto' 
 # DATABASE_SERVER_URL="postgresql://neondb_owner:npg_pXukNK7EOw4Q@ep-curly-hall-a9z21sjf-pooler.gwc.azure.neon.tech/neondb?sslmode=require" # URL de neon.tech
 # The client does not need to store data in any database
 # so let us define a sqlite in orden to avoid warning messages

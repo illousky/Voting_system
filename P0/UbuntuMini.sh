@@ -1,5 +1,7 @@
 #!/bin/bash
 
+### BASH SCRIPT TO CREATE A VIRTUAL MACHINE WITH UBUNTU MINIMAL INSTALLATION
+
 if [ $# -ne 1 ];
 	then echo "Debes indicar como argumento el nº de máquina virtual: 1, 2, ó 3."
 	exit

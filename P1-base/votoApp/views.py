@@ -1,3 +1,10 @@
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# author: Ignacio González Porras (github.com/illousky)
+
 from django.shortcuts import redirect, render
 from votoApp.forms import VotoForm, CensoForm, DelVotoForm, GetVotosForm
 from votoApp.votoDB import (verificar_censo, registrar_voto,
@@ -9,6 +16,18 @@ TITLE = '(votoSite)'
 # Create your views here.
 
 def aportarinfo_voto(request):
+    """
+        View to handle the voting process.
+        It checks if the user is registered in the census.
+        If the user is not registered, it displays an error message.
+        If the user is registered, it allows them to vote.
+        
+        params:
+            request: HttpRequest object containing the request data.
+        Returns:
+            HttpResponse object rendering the voting form or success message.
+    """
+    
     if request.method == 'POST':
         # data from form
         voto_form = VotoForm(request.POST)
@@ -42,6 +61,17 @@ def aportarinfo_voto(request):
 
 
 def aportarinfo_censo(request):
+    """
+        View to handle the census comprobation process.
+        It checks if the user is registered in the census.
+        If the user is not registered, it displays an error message.
+        If the user is registered, it redirects them to the voting form.
+        
+        params:
+            request: HttpRequest object containing the request data.
+        Returns:
+            HttpResponse object rendering the voting form or error message.
+    """
 
     if request.method == 'POST':
 
@@ -72,6 +102,17 @@ def aportarinfo_censo(request):
 
 
 def testbd(request):
+    """
+        View to test the database operations.
+        It allows users to register votes, delete votes, and retrieve votes.
+        If the user is not registered in the census, it displays an error message.
+        If the user is registered, it allows them to vote and displays success messages.
+        
+        params:
+            request: HttpRequest object containing the request data.
+        Returns:
+            HttpResponse object rendering the test database form or success message.
+    """
 
     if request.method == 'POST':
 
@@ -118,6 +159,17 @@ def testbd(request):
 
 
 def delvoto(request):
+    """
+        View to handle the deletion of votes.
+        It allows users to delete votes by providing the vote ID.
+        If the vote ID is valid, it deletes the vote and displays a success message.
+        If the vote ID is invalid, it displays an error message.
+        
+        params:
+            request: HttpRequest object containing the request data.
+        Returns:
+            HttpResponse object rendering the deletion form or success message.
+    """
 
     if request.method == 'POST':
         del_voto_form = DelVotoForm(request.POST)
@@ -133,6 +185,18 @@ def delvoto(request):
 
 
 def getvotos(request):
+    """
+        View to retrieve votes from the database.
+        It allows users to get votes by providing the electoral process ID.
+        If the ID is valid, it retrieves the votes and displays them.
+        If the ID is invalid, it displays an error message.
+        
+        params:
+            request: HttpRequest object containing the request data.
+        Returns:
+            HttpResponse object rendering the votes or error message.
+    """
+    
     if request.method == 'POST':
         get_votos_form = GetVotosForm(request.POST)
         if get_votos_form.is_valid():
