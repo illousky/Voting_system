@@ -1,3 +1,10 @@
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# author: Ignacio González Porras (github.com/illousky)
+
 from django.shortcuts import redirect, render
 from votoAppRPCClient.forms import VotoForm, CensoForm, DelVotoForm, GetVotosForm
 from votoAppRPCClient.votoDB import (verificar_censo, registrar_voto,
@@ -8,6 +15,21 @@ TITLE = '(votoSite)'
 # Create your views here.
 
 def aportarinfo_voto(request):
+    """
+        View to handle the voting process.
+        This view allows users to submit their vote after verifying their
+        registration in the census.
+        It checks if the user is registered in the census and then allows them
+        to submit their vote. If the user is not registered, it returns an error
+        message. If the vote is successfully registered, it displays a success
+        message with the vote details.
+        
+        params:
+            request: The HTTP request object containing the user's input.
+        returns:
+            Rendered HTML response with the voting form or success message.
+    """
+    
     if request.method == 'POST':
         # data from form
         voto_form = VotoForm(request.POST)
@@ -40,6 +62,18 @@ def aportarinfo_voto(request):
 
 
 def aportarinfo_censo(request):
+    """
+        View to handle the census comprobation process.
+        This view allows users to check if they are registered in the census
+        before they can vote. If the user is not registered, it returns an error
+        message. If the user is registered, it stores their DNI in the session
+        and redirects them to the voting form.
+        
+        params:
+            request: The HTTP request object containing the user's input.
+        returns:
+            Rendered HTML response with the census form or error message.
+    """
 
     if request.method == 'POST':
 
@@ -70,6 +104,18 @@ def aportarinfo_censo(request):
 
 
 def testbd(request):
+    """
+        View to test the database operations related to voting.
+        This view allows users to submit a vote, delete a vote, or retrieve votes
+        from the database. It handles both GET and POST requests for different
+        functionalities.
+        
+        params:
+            request: The HTTP request object containing the user's input.
+        returns:
+            Rendered HTML response with the voting form, deletion form,
+            retrieval form, or success/error messages.
+    """
 
     if request.method == 'POST':
 
@@ -115,6 +161,17 @@ def testbd(request):
 
 
 def delvoto(request):
+    """
+        View to handle the deletion of votes.
+        This view allows users to delete a vote by providing the vote ID.
+        If the deletion is successful, it displays a success message.
+        If there is an error during deletion, it displays an error message.
+        
+        params:
+            request: The HTTP request object containing the user's input.
+        returns:
+            Rendered HTML response with success or error messages.
+    """
 
     if request.method == 'POST':
         del_voto_form = DelVotoForm(request.POST)
@@ -130,6 +187,17 @@ def delvoto(request):
 
 
 def getvotos(request):
+    """
+        View to retrieve votes from the database.
+        This view allows users to get votes associated with a specific electoral process.
+        It handles both GET and POST requests for retrieving votes.
+        
+        params:
+            request: The HTTP request object containing the user's input.
+        returns:
+            Rendered HTML response with the retrieved votes or an error message.
+    """
+    
     if request.method == 'POST':
         get_votos_form = GetVotosForm(request.POST)
         if get_votos_form.is_valid():
