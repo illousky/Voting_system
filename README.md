@@ -45,3 +45,10 @@ FILE HIERARCHY:
 
         - /P1-ws-client:
             - Client of the WS system.
+
+
+ADDITIONAL FILES:
+
+    - All the files that aren't mentioned before are not important for the execution of the
+    system.
+    - Working on update to explain the rest of the files.
