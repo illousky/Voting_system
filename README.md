@@ -1,6 +1,7 @@
 AUTHOR:
 
     - Ignacio Gonzalez Porras
+    - Daniel Wentworth Fernandez
 
 
 EXECUTION GUIDE:
