@@ -17,8 +17,31 @@ EXECUTION GUIDE:
     http://localhost:8000/votoApp/censo/. You can change the port to any you put in the gunicorn
     configuration file.
 
-    - For running both rpc-server and ws-server, you must run their clients too. If not, you won't
-    have access to the system.
-    -To run the clients, execute "python3 manage.py runserver 0.0.0.0:8001" on the directory you want
-    to run. Of course, you can select the port you want to use. 
+    - For running both rpc-server and ws-server, you must run their clients too. If not, you 
+    won't have access to the system.
+    -To run the clients, execute "python3 manage.py runserver 0.0.0.0:8001" on the directory you 
+    want to run. Of course, you can select the port you want to use. 
     - Then access with the same URL mentioned before.
+
+
+FILE HIERARCHY:
+
+    - /VOTING_SYSTEM
+
+        - /P1-base:
+            - Main directory of the project. Source code. No additional technologies are used
+            in this program, just python programming using Django Framework.
+
+        - /P1-rpc-server:
+            - Directory of the same program than P1-base. This one uses RPC as communication
+            method. Same as before, Django Framework is used.
+
+        - /P1-rpc-client:
+            - Client of the RPC system, for consuming messages.
+
+        - /P1-ws-server:
+            - Directory with the same system, using Web Service standards for communication.
+            Same as both before, was implemented using Django Framework.
+
+        - /P1-ws-client:
+            - Client of the WS system.
