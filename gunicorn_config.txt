@@ -1,0 +1,20 @@
+[Unit]
+Description=Gunicorn WSGI Application Server
+After=network.target
+
+[Service]
+User=si2
+Group=si2
+WorkingDirectory=/home/si2/repo/p1base/P1-base   ///// Change WorkingDirectory as required
+Environment="PATH=/home/si2/venv/bin"
+ExecStart=/home/si2/venv/bin/gunicorn\
+        --workers 1\                             ///// Change workers as required
+        --bind 0.0.0.0:8000\                     ///// Change port as required
+        votoSite.wsgi:application
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
