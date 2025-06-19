@@ -5,7 +5,8 @@ AUTHOR:
 
 EXECUTION GUIDE:
 
-    - System done for running as daemon using gunicorn. Install gunicorn and copy and paste the gunicorn_config.txt file in a new file using: sudo nano /etc/systemd/system/gunicorn.service
+    - System done for running as daemon using gunicorn. Install gunicorn and copy and paste the
+    gunicorn_config.txt file in a new file using: sudo nano /etc/systemd/system/gunicorn.service
     - Run gunicorn using:
         1) sudo systemctl daemon-reload
         2) sudo systemctl enable gunicorn
